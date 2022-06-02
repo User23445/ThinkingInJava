@@ -2,11 +2,13 @@ package operators;
 /**
  * 
  * @author dbavc
- * Задание 5: Создайте класс Dog, содержащий два поля типа String: name и says. В методе 
-main() создайте два объекта Dog с разными именами (spot и scruffy) и сообщениями. 
-Выведите значения обоих полей для каждого из объектов.
- * Задание 6: В упражнении 5 создайте новую ссылку на Dog и присвойте ее объекту spot. 
-Сравните ссылки оператором == и методом equals().
+ * Р—Р°РґР°РЅРёРµ 5: РЎРѕР·РґР°Р№С‚Рµ РєР»Р°СЃСЃ Dog, СЃРѕРґРµСЂР¶Р°С‰РёР№ РґРІР° РїРѕР»СЏ С‚РёРїР° String: name Рё says. 
+ * Р’ РјРµС‚РѕРґРµ main() СЃРѕР·РґР°Р№С‚Рµ РґРІР° РѕР±СЉРµРєС‚Р° Dog СЃ СЂР°Р·РЅС‹РјРё РёРјРµРЅР°РјРё (spot Рё scruffy) Рё СЃРѕРѕР±С‰РµРЅРёСЏРјРё. 
+ * Р’С‹РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ РѕР±РѕРёС… РїРѕР»РµР№ РґР»СЏ РєР°Р¶РґРѕРіРѕ РёР· РѕР±СЉРµРєС‚РѕРІ
+ * 
+ * Р—Р°РґР°РЅРёРµ 6: Р’ СѓРїСЂР°Р¶РЅРµРЅРёРё 5 СЃРѕР·РґР°Р№С‚Рµ РЅРѕРІСѓСЋ СЃСЃС‹Р»РєСѓ РЅР° Dog Рё РїСЂРёСЃРІРѕР№С‚Рµ РµРµ РѕР±СЉРµРєС‚Сѓ spot.  
+ * РЎСЂР°РІРЅРёС‚Рµ СЃСЃС‹Р»РєРё РѕРїРµСЂР°С‚РѕСЂРѕРј == Рё РјРµС‚РѕРґРѕРј equals().
+ * 
  */ 
 
 class Dog {
@@ -33,11 +35,11 @@ public class Main5 {
 	public static void main(String []args) {
 		Dog spot = new Dog();
 		spot.setName("Spot");
-		spot.setSays("Гав! Гав!");
+		spot.setSays("Р“Р°РІ! Р“Р°РІ!");
 		
 		Dog scruffy  = new Dog();
 		scruffy.setName("Scruffy");
-		scruffy.setSays("Вуф! Вуф!");
+		scruffy.setSays("Р’СѓС„!");
 		
 		spot.showName();
 		spot.speak();
@@ -50,7 +52,7 @@ public class Main5 {
 		scooby.setSays("Scooby Dooby Doo!");
 		scooby.showName();
 		scooby.speak();
-		System.out.println("Сomparison: ");
+		System.out.println("Comparison: ");
 		scooby = spot;
 		System.out.println("Scooby == Spot: " + (scooby==spot));
 		System.out.println("Scooby.equals(Spot):" + scooby.equals(spot));

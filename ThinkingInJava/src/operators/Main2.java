@@ -1,4 +1,9 @@
 package operators;
+/**
+ * 
+ * @author dbavc
+ * Задание 2: Создайте класс с полем типа float. Используйте его для демонстрации совмещения имен.
+ */
 
 class Tank {
 	float level;
